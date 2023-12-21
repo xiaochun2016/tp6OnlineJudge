@@ -24,8 +24,10 @@
                             <td>{$v.total_num}</td>
                             <td>
                                 <?php
-                                    printf("%.2f", $v['solve_num'] / $v['total_num'] * 100);
-                                    echo "%"
+                                    if($v['total_num'] > 0) {
+                                        printf("%.2f", $v['solve_num'] / $v['total_num'] * 100);
+                                        echo "%";
+                                    }
                                 ?>
                             </td>
                         </tr>

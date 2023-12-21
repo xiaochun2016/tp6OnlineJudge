@@ -79,7 +79,7 @@
 
         // 提交评论
         $('.comment-submit').click(function () {
-            uid = "{:session('username')['id']}";
+            uid = "{:session('userInfo')['id']}";
             pid = "{:input('get.id')}";
             content = $('#content').val();
             if (uid == undefined || uid == null || uid == "") {

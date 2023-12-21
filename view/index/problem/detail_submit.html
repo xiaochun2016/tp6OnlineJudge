@@ -24,7 +24,7 @@
         $ = layui.jquery;
 
         $('.code-submit').click(function () {
-            uid = "{:session('username')['id']}";
+            uid = "{:session('userInfo')['id']}";
             code = $('.code').val();
             pid = "{:input('get.pid')}";
 
