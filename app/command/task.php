@@ -14,7 +14,7 @@ use think\facade\Log;
 
 /**
  *执行任务
- * @desc crontab 执行 第分钟一次
+ * @desc crontab 执行 每分钟一次
  * @exec /1 * * * * /usr/local/opt/php@7.4/bin/php /Users/yuanxiaochun/Documents/git_workspce/tp6OnlineJudge/think task
  */
 class task extends Command {
